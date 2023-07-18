@@ -57,6 +57,17 @@ h2 {
   line-height: 67px;
 }
 
+h3 {
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 45px;
+}
+h4 {
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 30px;
+}
+
 button {
   cursor: pointer;
   text-decoration: none;
@@ -81,7 +92,6 @@ img {
   justify-content: space-between;
   align-items: center;
   color: var(--secondary-black-color);
-  border-bottom: 1px solid #f3f3f3;
 }
 .logo {
   font-family: Rochester;
@@ -109,6 +119,7 @@ img {
   font-weight: 400;
   line-height: normal;
   color: var(--primary-text-color);
+  border-top: 1px solid #f3f3f3;
 }
 .nav-list {
   display: flex;
@@ -175,6 +186,122 @@ img {
   border-radius: 15px;
   background: var(--secondary-black-color);
 }
+/* ==========COLLECTIONS======= */
+.collections {
+  padding-top: 71px;
+}
+.collections-list {
+  display: grid;
+  grid-template-columns: 1fr 303px 302px;
+  grid-template-rows: 224px 204px 313px;
+  gap: 30px;
+  color: var(--secondary-black-color);
+}
+.collections-list > div {
+  overflow: hidden;
+  border-radius: 16px;
+}
+.collection-item-1 {
+  grid-row: 1/3;
+  padding-top: 268px;
+  padding-left: 32px;
+  padding-bottom: 32px;
+  padding-right: 125px;
+  background-image: url("../images/women-collection-category.png");
+  background-repeat: no-repeat;
+  background-size: auto auto;
+  background-position: center;
+  color: var(--primary-white-color);
+}
+.collection-item-1 .collection-item-subtitle {
+  margin-bottom: 8px;
+  font-family: var(--secondary-text-font);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.collection-item-btn {
+  min-width: 93px;
+  padding: 0px 22px;
+  border: none;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.4);
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.collection-item-4 {
+  grid-column: 2/4;
+}
+
+.collection-item-5 {
+  grid-column: 1/4;
+}
+/* ===========GALLERY======== */
+.gallery-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr;
+  gap: 30px;
+}
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  background: var(--primary-white-color);
+  box-shadow: 2px 5px 45px 0px rgba(237, 163, 181, 0.25);
+}
+
+.like-icon {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+}
+.gallery-item-content {
+  width: 100%;
+  padding: 16px 18px 18px 24px;
+  padding-right: 18px;
+  font-weight: 700;
+  line-height: 30px;
+}
+.gallery-item-title {
+  margin-bottom: 8px;
+}
+.gallery-item-text {
+  margin-bottom: 27px;
+  font-family: var(--secondary-text-font);
+  font-size: 16px;
+}
+.buy-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.gallery-item-price {
+  font-size: 34px;
+}
+.gallery-item-link {
+  min-width: 153px;
+  height: 58px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  border-radius: 15px;
+  background: var(--secondary-black-color);
+  color: var(--primary-white-color);
+  text-align: center;
+  font-family: var(--secondary-text-font);
+  font-size: 18px;
+}
+.gallery-item-link:hover {
+  background-color: var(--accent-text-color);
+}
 
 /* ==========Contacts============= */
 .contacts-content {
@@ -205,6 +332,44 @@ img {
 }
 
 /* =======FOOTER========= */
+.footer-section {
+  background-color: var(--primary-white-color);
+  padding-top: 32px;
+  padding-bottom: 50px;
+}
+.footer-nav-box {
+  margin-right: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.shop-info-logo {
+  display: inline-block;
+  margin-bottom: 24px;
+}
+.shop-info-text {
+  width: 255px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 30px;
+  color: var(--secondary-grey-text-color);
+}
+.footer-nav-box-item {
+  margin-top: 13px;
+}
+.footer-nav-box-title {
+  margin-bottom: 22px;
+}
+.footer-nav-item {
+  color: var(--primary-grey-text-color);
+  font-family: var(--secondary-text-font);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 30px;
+}
+.footer-nav-item:not(:last-child) {
+  margin-bottom: 22px;
+}
 .copyright {
   height: 74px;
   padding-bottom: 22px;
